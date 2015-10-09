@@ -1,0 +1,31 @@
+<div id='signin-modal' class='modal fade' tabindex='-1'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <ul class='nav nav-tabs'>
+        <li class='active'><a href='#signin' data-toggle='tab'>Sign In</a></li>
+        <li><a href='#signup' data-toggle='tab'>Sign Up</a></li>
+        <li class='pull-right'>
+          <a href='#' class='close' data-dismiss='modal' aria-hidden='true' style='margin: 0; line-height: 0;'><%= icon('close') %></a>
+        </li>
+      </ul>
+      <div class='modal-body'>
+        <div class='pull-right'><small class='text-muted'>All Fields Required</small></div>
+        <div id='signinContent' class='tab-content'>
+          <div class='tab-pane fade active in' id='signin'>
+            <%= render 'layouts/forms/signin' %>
+          </div>
+          <div class='tab-pane fade' id='signup'>
+            <%= render 'layouts/forms/signup' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  ul.nav.nav-tabs { background: #3F51B5; }
+  ul.nav.nav-tabs > li.active { background: #2B387F; }
+  ul.nav.nav-tabs > li > a { padding: 15px 20px; }
+</style>
+
