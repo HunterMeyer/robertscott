@@ -23,7 +23,17 @@ module ApplicationHelper
     end
   end
 
-  def youtube_url(video_id)
+  def video_url(video_id)
     "https://www.youtube.com/watch?v=#{video_id}"
   end
+
+  def subscribe_url
+    'https://www.youtube.com/channel/UC34xp0_WvobosrCJeBTlmYg?sub_confirmation=1'
+  end
+
+  def subscribe_button(text = 'Subscribe')
+    link_to icon('youtube-play', "#{text}"), subscribe_url, 
+    class: 'waves-effect waves-light btn red white-text', target: '_blank'
+  end
+
 end
