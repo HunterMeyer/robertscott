@@ -9,6 +9,8 @@ $primary-color: color('red', 'darken-4') !default;
 
 /* Variables
 ========================================================================== */
+$Red:          #F44336;
+$Green:        #47AC65;
 $Orange:       #FF9800;
 $BgGrey:       #F4F4F4;
 $DividerGrey:  #EAEAEA;
@@ -42,18 +44,22 @@ i.right { margin-left: 5px; margin-right: -10px; }
 /* Form Errors */
 .error                               { margin-top: -8px; }
 #error_explanation > h2              { margin-bottom: 2px; }
-.error, #error_explanation > h2      { color: $Orange; font-weight: bold; font-size: 18px; } 
+.error, #error_explanation > h2      { color: $Red; font-weight: bold; font-size: 18px; } 
 .error > ul, #error_explanation > ul { list-style-position: inside; padding-left: 2px; li { font-weight: normal; font-size: 14px; color: #6C6C6C; } }
 
 .input-field label { color: #525252; }
+
+.input-field textarea.materialize-textarea:focus + label,
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
-.input-field input[type=password]:focus + label { color: $Orange; }
+.input-field input[type=password]:focus + label { color: $Red; }
+
+.input-field textarea.materialize-textarea:focus,
 .input-field input[type=text]:focus,
 .input-field input[type=email]:focus,
-.input-field input[type=password]:focus { border-bottom: 1px solid $Orange; box-shadow: 0 1px 0 0 $Orange; }
+.input-field input[type=password]:focus { border-bottom: 1px solid $Red; box-shadow: 0 1px 0 0 $Red; }
 .input-field .prefix { color: #525252; }
-.input-field .prefix.active { color: $Orange; }
+.input-field .prefix.active { color: $Red; }
 
 select { background: #FFF; border: solid 1px #DADADA; }
 select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #BEBEBE; outline: none; }
@@ -64,6 +70,22 @@ select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #
 .navbar-fixed nav { background: #333333; }
 #nav-mobile li { height: 64px; }
 #mobile-sidebar li a { width: 100%; }
+
+
+/* Alerts
+========================================================================== */
+.alert {
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  height: 40px;
+  background: #FFF;
+  font-weight: bold;
+}
+
+.alert div { padding: 8px 20px; }
+.alert-success { color: $Green; }
+.alert-error   { color: $Red; }
 
 
 /* Homepage Banner

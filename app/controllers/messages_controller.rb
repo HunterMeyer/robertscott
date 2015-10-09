@@ -6,11 +6,11 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.create(message_params)
-    if @message.save!
-      flash[:notice] = 'Your message has been sent'
+    if @message.save
+      flash[:success] = 'Success! Your message has been sent.'
       redirect_to root_path
     else
-      flash[:error] = 'Whoops. All fields are required.'
+      flash[:error] = 'Whoops! All fields are required.'
       render 'new'
     end
   end
