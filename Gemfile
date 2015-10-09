@@ -15,6 +15,7 @@ gem 'awesome_print'
 gem 'json'
 gem 'font-awesome-sass'
 gem 'materialize-sass'
+gem 'httparty'
 
 group :production do
   gem 'rails_12factor'
