@@ -1,7 +1,7 @@
 /* Mix-ins
 ========================================================================== */
 @import 'materialize/components/color';
-$primary-color: color('grey', 'darken-3') !default;
+$primary-color: color('red', 'darken-4') !default;
 @import 'materialize';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
@@ -70,42 +70,34 @@ select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #
   padding: 40px 0 20px 0;
   margin-bottom: 20px;
   margin-top: -30px; 
-  color: rgba(45, 45, 45, 0.87);
+  color: #FFF;
   background-color: #525252;
-  background-image: url(https://s3-us-west-2.amazonaws.com/codeschools/images/schools.png);
+  background-image: url(https://lh6.googleusercontent.com/-1TOAPgta6o8/VOfNTxhHcHI/AAAAAAAAAB0/X5tAvYVbOr0/w1326-h1324-no/IMG_9811.JPG);
   background-position: center center;
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   background-size: cover;
 }
-.cover-primary { margin-bottom: -20px; }
+.cover-primary { margin-bottom: 20px; }
 .cover-button  { margin: 20px 0 10px 0; }
-#cover-text-a { font-size: 100px; line-height: 100px; letter-spacing: 11px; margin-left: 11px; }
-#cover-text-b { font-size: 124px; line-height: 120px; }
-#cover-text-c { font-size: 215px; line-height: 180px; }
-#cover-text-d { font-size: 25px; }
+#cover-text-a { font-size: 90px; line-height: 100px; letter-spacing: 8px; }
+/*#cover-text-b { font-size: 124px; line-height: 120px; }*/
 
 @media(max-width: 550px) {
-  #cover-text-a { font-size: 90px;  line-height: 100px; letter-spacing: 10px; }
-  #cover-text-b { font-size: 112px; line-height: 120px; }
-  #cover-text-c { font-size: 190px; line-height: 180px; }
-  #cover-text-d { font-size: 20px;  line-height: 22px; }
+  #cover-text-a { font-size: 80px;  line-height: 100px; letter-spacing: 5px; }
+  /*#cover-text-b { font-size: 112px; line-height: 120px; }*/
 }
 @media(max-width: 500px) {
-  #cover-text-a { font-size: 70px;  line-height: 70px; letter-spacing: 10px; }
-  #cover-text-b { font-size: 92px;  line-height: 100px; }
-  #cover-text-c { font-size: 158px; line-height: 140px; }
+  #cover-text-a { font-size: 60px;  line-height: 70px; letter-spacing: 3px; }
+  /*#cover-text-b { font-size: 92px;  line-height: 100px; }*/
 }
 @media(max-width: 425px) {
-  #cover-text-a { font-size: 62px;  line-height: 70px; letter-spacing: 10px; margin-left: 11px; }
-  #cover-text-b { font-size: 84px;  line-height: 100px; }
-  #cover-text-c { font-size: 145px; line-height: 140px; }
+  #cover-text-a { font-size: 50px;  line-height: 70px; letter-spacing: 3px; }
+  /*#cover-text-b { font-size: 84px;  line-height: 100px; }*/
 }
 @media(max-width: 400px) {
-  #cover-text-a { font-size: 50px;  line-height: 40px; letter-spacing: 10px; }
-  #cover-text-b { font-size: 70px;  line-height: 110px; }
-  #cover-text-c { font-size: 120px; line-height: 90px; }
-  #cover-text-d { margin-top: 15px; }
+  #cover-text-a { font-size: 45px;  line-height: 40px; letter-spacing: 5px; }
+  /*#cover-text-b { font-size: 70px;  line-height: 110px; }*/
 }
 
 
