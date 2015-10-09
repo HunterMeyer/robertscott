@@ -6,16 +6,20 @@
       <% end %> 
       <a data-activates='mobile-sidebar' class='button-collapse'><i class='mdi-navigation-menu'></i></a>
       <ul id='nav-mobile' class='right hide-on-med-and-down'>
-        <li><%= link_to icon('youtube'),     'http://bit.ly/1Ll2sd7', target: '_blank' %></li>
-        <li><%= link_to icon('google-plus'), 'http://bit.ly/1VIvk5Q', target: '_blank' %></li>
-        <li><%= link_to 'Contact', '#' %></li>
+        <li><%= link_to icon('youtube'),     'http://bit.ly/1Ll2sd7',   target: '_blank' %></li>
+        <li><%= link_to icon('google-plus'), 'http://bit.ly/1VIvk5Q',   target: '_blank' %></li>
+        <li><%= link_to icon('facebook'),    'http://on.fb.me/1MhBteP', target: '_blank' %></li>
+        <li><%= link_to icon('twitter'),     'http://bit.ly/1GzD3GW',   target: '_blank' %></li>
+        <li><%= link_to 'Contact',           '#' %></li>
       </ul>
       <ul class='side-nav' id='mobile-sidebar'>
         <li><a href='javascript:void(0)' class='close-mobie-sidebar'><i class='mdi-navigation-chevron-left'></i></a></li>
-        <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'YouTube', 'http://bit.ly/1Ll2sd7', target: '_blank' %></li>
-        <li><%= link_to 'Google+', 'http://bit.ly/1VIvk5Q', target: '_blank' %></li>
-        <li><%= link_to 'Contact', '#' %></li>
+        <li><%= link_to 'Home',     root_path %></li>
+        <li><%= link_to 'YouTube',  'http://bit.ly/1Ll2sd7',   target: '_blank' %></li>
+        <li><%= link_to 'Google+',  'http://bit.ly/1VIvk5Q',   target: '_blank' %></li>
+        <li><%= link_to 'Facebook', 'http://on.fb.me/1MhBteP', target: '_blank' %></li>
+        <li><%= link_to 'Twitter',  'http://bit.ly/1GzD3GW',   target: '_blank' %></li>
+        <li><%= link_to 'Contact',  '#' %></li>
       </ul>
     </div>
   </nav>
