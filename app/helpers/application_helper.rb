@@ -22,4 +22,8 @@ module ApplicationHelper
       end
     end
   end
+
+  def youtube_url(video_id)
+    "https://www.youtube.com/watch?v=#{video_id}"
+  end
 end
