@@ -25,6 +25,15 @@ main { margin-top: 30px; }
 i.right { margin-left: 5px; margin-right: -10px; }
 .btn { margin-bottom: 0px; }
 
+
+/* Helper Classes
+========================================================================== */
+.hidden       { display: none; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.pointer      { cursor: pointer; }
+
+
 /* All Forms
 ========================================================================== */
 .back-button    { margin-bottom: 8px; }
@@ -47,14 +56,6 @@ i.right { margin-left: 5px; margin-right: -10px; }
 
 select { background: #FFF; border: solid 1px #DADADA; }
 select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #BEBEBE; outline: none; }
-
-
-/* Helper Classes
-========================================================================== */
-.hidden       { display: none; }
-.block        { display: block; }
-.inline-block { display: inline-block; }
-.pointer      { cursor: pointer; }
 
 
 /* Navigation Bar
@@ -108,7 +109,31 @@ select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #
   .tog-tab ~ .hidden { display: inline-block; font-size: 20px; }
 }
 
+.card .card-content .card-title { line-height: 26px; }
 .card-button { margin: 10px 0 -10px 0; }
+.card a { margin-right: 0 }
+
+.card-title span { font-size: 18px; }
+.card .truncate {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media(max-width: 1330px) { .card .truncate { width: 180px; } }
+@media(max-width: 1150px) { .card .truncate { width: 150px; } }
+@media(max-width: 1130px) { .card .truncate { width: 140px; } }
+@media(max-width: 992px)  { .card .truncate { width: 400px; } }
+@media(max-width: 890px)  { .card .truncate { width: 350px; } }
+@media(max-width: 790px)  { .card .truncate { width: 300px; } }
+@media(max-width: 700px)  { .card .truncate { width: 250px; } }
+@media(max-width: 615px)  { .card .truncate { width: 200px; } }
+@media(max-width: 600px)  { .card .truncate { width: 380px; } }
+@media(max-width: 540px)  { .card .truncate { width: 330px; } }
+@media(max-width: 480px)  { .card .truncate { width: 280px; } }
+@media(max-width: 430px)  { .card .truncate { width: 250px; } }
+@media(max-width: 400px)  { .card .truncate { width: 200px; } }
 
 
 /* Footer
