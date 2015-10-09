@@ -5,3 +5,122 @@ $primary-color: color('grey', 'darken-3') !default;
 @import 'materialize';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+
+/* Variables
+========================================================================== */
+$Orange:       #FF9800;
+$BgGrey:       #F4F4F4;
+$DividerGrey:  #EAEAEA;
+
+
+/* Universal
+========================================================================== */
+html, body { height: 100%; color: #525252; }
+body { background-color: $BgGrey; }
+a:hover, a:focus, a:active { text-decoration: none; color: inherit; }
+main { margin-top: 30px; }
+/*main { flex: 1 0 auto; }*/
+/*body { display: flex; min-height: 100vh; flex-direction: column; }*/
+i.right { margin-left: 5px; margin-right: -10px; }
+.btn { margin-bottom: 0px; }
+
+/* All Forms
+========================================================================== */
+.back-button    { margin-bottom: 8px; }
+.cancel-button  { margin-left: 5px; }
+/* Form Errors */
+.error                               { margin-top: -8px; }
+#error_explanation > h2              { margin-bottom: 2px; }
+.error, #error_explanation > h2      { color: $Orange; font-weight: bold; font-size: 18px; } 
+.error > ul, #error_explanation > ul { list-style-position: inside; padding-left: 2px; li { font-weight: normal; font-size: 14px; color: #6C6C6C; } }
+
+.input-field label { color: #525252; }
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label { color: $Orange; }
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus { border-bottom: 1px solid $Orange; box-shadow: 0 1px 0 0 $Orange; }
+.input-field .prefix { color: #525252; }
+.input-field .prefix.active { color: $Orange; }
+
+select { background: #FFF; border: solid 1px #DADADA; }
+select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #BEBEBE; outline: none; }
+
+
+/* Helper Classes
+========================================================================== */
+.hidden       { display: none; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.pointer      { cursor: pointer; }
+
+
+/* Navigation Bar
+========================================================================== */
+.navbar-fixed nav { background: #333333; }
+#nav-mobile li { height: 64px; }
+#mobile-sidebar li a { width: 100%; }
+
+
+/* Homepage Banner
+========================================================================== */
+.cover-image { 
+  padding: 40px 0 20px 0;
+  margin-bottom: 20px;
+  margin-top: -30px; 
+  color: rgba(45, 45, 45, 0.87);
+  background-color: #525252;
+  background-image: url(https://s3-us-west-2.amazonaws.com/codeschools/images/schools.png);
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover;
+}
+.cover-primary { margin-bottom: -20px; }
+.cover-button  { margin: 20px 0 10px 0; }
+#cover-text-a { font-size: 100px; line-height: 100px; letter-spacing: 11px; margin-left: 11px; }
+#cover-text-b { font-size: 124px; line-height: 120px; }
+#cover-text-c { font-size: 215px; line-height: 180px; }
+#cover-text-d { font-size: 25px; }
+
+@media(max-width: 550px) {
+  #cover-text-a { font-size: 90px;  line-height: 100px; letter-spacing: 10px; }
+  #cover-text-b { font-size: 112px; line-height: 120px; }
+  #cover-text-c { font-size: 190px; line-height: 180px; }
+  #cover-text-d { font-size: 20px;  line-height: 22px; }
+}
+@media(max-width: 500px) {
+  #cover-text-a { font-size: 70px;  line-height: 70px; letter-spacing: 10px; }
+  #cover-text-b { font-size: 92px;  line-height: 100px; }
+  #cover-text-c { font-size: 158px; line-height: 140px; }
+}
+@media(max-width: 425px) {
+  #cover-text-a { font-size: 62px;  line-height: 70px; letter-spacing: 10px; margin-left: 11px; }
+  #cover-text-b { font-size: 84px;  line-height: 100px; }
+  #cover-text-c { font-size: 145px; line-height: 140px; }
+}
+@media(max-width: 400px) {
+  #cover-text-a { font-size: 50px;  line-height: 40px; letter-spacing: 10px; }
+  #cover-text-b { font-size: 70px;  line-height: 110px; }
+  #cover-text-c { font-size: 120px; line-height: 90px; }
+  #cover-text-d { margin-top: 15px; }
+}
+
+
+/* Homepage Tabs
+========================================================================== */
+@media(max-width: 500px) {
+  .tog-tab { display: none; }
+  .tog-tab ~ .hidden { display: inline-block; font-size: 20px; }
+}
+
+.card-button { margin: 10px 0 -10px 0; }
+
+
+/* Footer
+========================================================================== */
+footer.page-footer { background: none; }
+footer.page-footer .footer-copyright { background-color: #575757; }
+
