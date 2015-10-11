@@ -48,11 +48,12 @@
                  <span class='truncate inline-block'><%= video.title %></span>
                  <i class='mdi-navigation-close right'></i>
               </span>
-              <p><%= video.description %></p>
-              <div class='card-button center-align'>
-                <%= link_to icon('youtube-play', 'Play on YouTube'), video_url(video.video_id), 
-                  class: 'waves-effect waves-light btn red white-text', target: '_blank' %>
-              </div>
+              <%= link_to icon('youtube-play', 'Play'), '#video-modal', 
+                data: { video_id: video.video_id, video_title: video.title },
+                class: 'waves-effect waves-light btn red white-text modal-trigger' %>
+              <p>
+                <%= video.description %>
+              </p>
             </div>
           </div>
         </div>
@@ -65,3 +66,6 @@
     Rate, Comment, and <span class='inline-subscribe-button'><%= subscribe_button %></span>
   </div>
 </div>
+
+<%= render 'player_modal' %>
+
