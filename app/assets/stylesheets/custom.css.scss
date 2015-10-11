@@ -22,11 +22,11 @@ html, body { height: 100%; color: #525252; }
 body { background-color: $BgGrey; }
 a:hover, a:focus, a:active { text-decoration: none; color: inherit; }
 main { margin-top: 30px; }
-/*main { flex: 1 0 auto; }*/
-/*body { display: flex; min-height: 100vh; flex-direction: column; }*/
 i.right { margin-left: 5px; margin-right: -10px; }
 .btn { margin-bottom: 0px; }
 .inline-subscribe-button a { margin: 0 5px -10px 5px; }
+.modal { max-height: 100%; }
+.modal .modal-content { padding: 0; }
 
 
 /* Helper Classes
