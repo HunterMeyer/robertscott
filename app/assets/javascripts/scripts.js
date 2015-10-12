@@ -16,7 +16,9 @@ $(document).ready(function() {
       embed_url = 'https://www.youtube.com/embed/' + video_id + '?rel=0&autoplay=1';
       external_url = 'https://www.youtube.com/watch?v=' + video_id;
       video_player.attr('src', embed_url);
-      video_player.parent().parent().prev().children('#modal-yt-link').attr('href', external_url);
+      video_player.parent().parent().prev().children('.modal-yt-link').each(function() {
+        $(this).attr('href', external_url);
+      });
     },
     complete: function() { video_player.attr('src', ''); }
   });

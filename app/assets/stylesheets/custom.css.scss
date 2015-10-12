@@ -25,9 +25,17 @@ main { margin-top: 30px; }
 i.right { margin-left: 5px; margin-right: -10px; }
 .btn { margin-bottom: 0px; }
 .inline-subscribe-button a { margin: 0 5px -10px 5px; }
+
+
+/* Video Modal
+========================================================================== */
 .modal { max-height: 100%; }
 .modal .modal-content { padding: 0; }
+.modal .modal-links { padding: 4px 5px; margin: 1px 0 -5px 0; }
+.modal .modal-links a { margin-bottom: 0; }
 
+.play-sm { display: none; }
+@media(max-width: 360px) { .play-sm { display: inline-block; } .play-lg { display: none; } }
 
 /* Helper Classes
 ========================================================================== */
