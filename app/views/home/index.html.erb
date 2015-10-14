@@ -9,56 +9,11 @@
   </div>
 </div>
 
-<div class='row'>
-  <div class='grey darken-4'>
-    <div class='row'>
-      <div class='col s10 offset-s1 center-align' style='padding: 40px 0;'>
-        <div class='video-container center-align'>
-          <iframe width='853' height='480' src='https://www.youtube.com/embed/68j6qeQXW28' frameborder='0' allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <div class='container'>
   <div class='divider'></div>
+  <h3 class='red-text text-lighten-1'>Season <b>1</b></h3>
 
-  <h5 class='red-text text-lighten-1'>Check out all videos why don't ya</h5>
-
-  <% @videos.in_groups_of(3, false) do |videos| %>
-    <div class='row'>
-      <% videos.each do |video| %>
-        <div class='col l4 m8 offset-m2 s12'>
-          <div class='card'>
-            <div class='card-image waves-effect waves-block waves-light'>
-              <%= image_tag video.thumb_url, class: 'activator' %>
-            </div>
-            <div class='card-content'>
-              <span class='card-title activator grey-text text-darken-4'>
-                <span class='truncate inline-block'><%= video.title %></span>
-                <i class='mdi-navigation-more-vert right'></i>
-              </span>
-            </div>
-            <div class='card-reveal'>
-              <span class='card-title grey-text text-darken-4'>
-                 <span class='truncate inline-block'><%= video.title %></span>
-                 <i class='mdi-navigation-close right'></i>
-              </span>
-              <%= link_to icon('youtube-play', 'Play'), '#video-modal', 
-                data: { video_id: video.video_id, video_title: video.title },
-                class: 'waves-effect waves-light btn red white-text modal-trigger' %>
-              <p>
-                <%= video.description %>
-                <div class='grey-text text-lighten-2'><small>Posted <%= time_ago_in_words(video.published_at) %> ago</small></div>
-              </p>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
+  <%= react_component 'Videos', { data: @videos } %>
 
   <div class='divider'></div>
   <div class='row center-align' style='margin: 40px 0;'>
@@ -67,4 +22,4 @@
   <div class='divider'></div>
 </div>
 
-<%= render 'player_modal' %>
+<%= react_component 'Player' %>
