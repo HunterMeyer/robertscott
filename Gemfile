@@ -16,7 +16,7 @@ gem 'json'
 gem 'font-awesome-sass'
 gem 'materialize-sass'
 gem 'httparty'
-gem 'react-rails', '~> 1.3.0'
+gem 'react-rails', '~> 1.0.0'
 
 group :production do
   gem 'rails_12factor'
