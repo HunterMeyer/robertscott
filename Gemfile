@@ -13,7 +13,7 @@ gem 'devise'
 gem 'redcarpet'
 gem 'awesome_print'
 gem 'json'
-gem 'font-awesome-sass'
+gem 'font-awesome-rails'
 gem 'materialize-sass'
 gem 'httparty'
 
