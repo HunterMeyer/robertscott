@@ -3,7 +3,6 @@
 @import 'materialize/components/color';
 $primary-color: color('red', 'darken-4') !default;
 @import 'materialize';
-@import 'font-awesome-sprockets';
 @import 'font-awesome';
 
 
@@ -12,7 +11,7 @@ $primary-color: color('red', 'darken-4') !default;
 $Red:          #F44336;
 $Green:        #47AC65;
 $Orange:       #FF9800;
-$BgGrey:       #F4F4F4;
+$BgGrey:       #E0E0E0;
 $DividerGrey:  #EAEAEA;
 
 
@@ -75,9 +74,21 @@ select:hover, select:focus, select:active { cursor: pointer; border: 1px solid #
 
 /* Navigation Bar
 ========================================================================== */
-.navbar-fixed nav { background: #333333; }
+.navbar-fixed nav, ul.side-nav.dark-side-nav { background: #333333; }
 #nav-mobile li { height: 64px; }
 #mobile-sidebar li a { width: 100%; }
+
+ul.side-nav.dark-side-nav {
+  > li a {
+    color: $BgGrey;
+    &:hover { color: #444; }
+  }
+  > li > a > i {
+    margin-right: 3px;
+    font-size: 14px;
+    @extend .red-text, .text-darken-2
+  }
+}
 
 
 /* Alerts
