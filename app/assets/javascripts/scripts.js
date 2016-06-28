@@ -2,7 +2,8 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.close-mobie-sidebar').click(function() { $('.button-collapse').sideNav('hide'); }); 
   $('.alert-dismissible .close').click(function() { $(this).parent().fadeOut(); })
-  
+  setTimeout(function() { $('.alert').fadeOut(); }, 3000);
+
   video_player = $('#video-player');
   video_link = '';
   $('.modal-trigger').click(function() { video_link = $(this); });
